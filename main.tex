@@ -9,12 +9,12 @@
 \usepackage{lipsum}
 \usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
 
-
-
-
 \begin{document}
 \begin{center}
     \textbf{Jorge Enciso}\\
+    \begin{center}
+        Machine Learning Engineer and Performance Engineer
+    \end{center}
     \hrulefill
 \end{center}
 
@@ -45,82 +45,93 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \begin{center}
     \textbf{Research Experience}
 \end{center}
-\textbf{Organization} \hfill City, State (or Remote)
 
-\textbf{Position Title} \hfill Month Year – Month Year
-\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
-    \item Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
-    \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
-    \item Quantify where possible.
-    \item Do not use personal pronouns; each line should be a phrase rather than a full sentence.
-\end{itemize}
-
-\vspace{12pt}
-
-\textbf{Organization} \hfill City, State (or Remote)
-
-\textbf{Position Title} \hfill Month Year – Month Year
-\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
-    \item With your next-most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
-    \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
-    \item Quantify where possible.
-    \item Do not use personal pronouns; each line should be a phrase rather than a full sentence.
-\end{itemize}
-\begin{center}
-    \textbf{Research Experience}
-\end{center}
-
-\textbf{Independent Researcher – ML for Geophysical Forecasting} \hfill Remote \\
-\textit{MHD-informed Multi-Modal Networks for Geomagnetic Forecasting} \hfill May 2024 – Present
+\textbf{Multi-modal modelling for Geophysical Forecasting} \hfill Polars, Pandas, Pytorch \\
+\textit{MHD-informed Multi-Modal Networks for Geomagnetic Forecasting} \hfill October 2023 – May 2024
 \begin{itemize}[noitemsep]
     \item Developed a multi-modal ML framework using data from LASCO, SDO, ACE, and DSCOVR to predict Dst index and magnetospheric boundaries.
     \item Engineered transformer-based architecture for satellite time series fusion; integrated MHD constraints into training dynamics.
     \item Led all aspects: data preprocessing, model design, CUDA kernel optimization, and evaluation.
 \end{itemize}
 
-\textbf{Independent Researcher – ML for Astronomic instrumentation} \hfill Remote \\
-\textit{CorKit: A Framework for LASCO Coronagraph Calibration} \hfill Jan 2024 – Apr 2024
+\textbf{Computer Vision for Astronomic instrumentation} \hfill OpenCV, Scikit-Image, Pytorch \\
+\textit{CorKit: A Framework for LASCO Coronagraph Calibration} \hfill March 2024 – July 2024
 \begin{itemize}[noitemsep]
     \item Developed a pipeline for automated image preprocessing and calibration of solar coronagraph data.
     \item Integrated physics-informed constraints to correct lens artifacts and vignetting in LASCO C2/C3 data.
     \item Implemented using PyTorch and OpenCV; optimized modules for GPU acceleration.
 \end{itemize}
 
-\textbf{Independent Researcher – ML for Statistical Mechanics} \hfill Remote \\
-\textit{Vlasov-Maxwell informed Operator Learning for Solar Wind Modeling} \hfill Jan 2024 – Apr 2024
+\textbf{Statistical Mechanics informed Neural Networks} \hfill NVIDIA Modulus, Pytorch, Polars, Pandas \\
+\textit{Vlasov-Maxwell informed Operator Learning for Solar Wind Modeling} \hfill October 2024 – Present
 \begin{itemize}[noitemsep]
-    \item Developed a
-    \item
-    \item
-\end{itemize}
+    \item Modeled solar wind behavior using physics-informed machine learning.
+    \item Incorporated statistical mechanics constraints into the governing equations.
+    \item Designed custom Physics-Informed Neural Operators (PINOs) tailored to the system.\end{itemize}
 
-\textbf{Independent Researcher – ML for Celestial Mechanics} \hfill Remote \\
-\textit{Physics informed Neural Networks for Celestial Mechanics: The Family of N-body problems} \hfill Jan 2024 – Apr 2024
+\textbf{Machine Learning for Celestial Mechanics} \hfill NVIDIA Modulus, Pytorch, Numpy \\
+\textit{PINNs for Celestial Mechanics: The Family of N-body problems} \hfill December 2024 – Present
 \begin{itemize}[noitemsep]
-    \item Developed a
-    \item
-    \item
+    \item Understanding chaotic systems with Physics informed Neural Networks.
+    \item Enforced hamiltonian constraints through physics-informed training loss functions.
+    \item Studied resonancy and periodic properties of the physical system.
 \end{itemize}
 
 \begin{center}
-    \textbf{Selected Projects}
+    \textbf{Specialized Projects}
 \end{center}
 
-\textbf{LightTorch – Minimal Deep Learning Framework} \hfill C++, CUDA \\
+\textbf{LightTorch – Deep Learning Framework} \hfill Lightning, Pytorch, CUDA C++ \\
 \textit{Personal ML Framework Project} \hfill 2024 – Present
 \begin{itemize}[noitemsep]
-    \item Built from scratch using CUDA C++ and CuDNN for low-level optimization.
-    \item Supports fused forward-backward passes, gradient descent, and custom kernel stacks for asynchronous dataflow.
-    \item In progress: Python bindings via PyBind11 and a compiler for translating to PyTorch models.
+    \item Wrapper over the Pytorch Lightning and plain Pytorch backends.
+    \item Abstractions for supervised, self-supervised, and adversarial training.
+    \item More than 20 modules extending novel architectures, including Partial Convolutions, Fourier Layers, and Attention mechanisms, among others.
+    \item In progress: Low level optimizations for non-standard modules.
 \end{itemize}
 
-\textbf{Fusion – IO-Aware Kernelized Training Compiler} \hfill CUDA, C++, Compiler Design \\
+\textbf{Fusion – IO-Aware Kernelized Training Compiler} \hfill CUDA, C++, Pytorch\\
 \textit{In Development} \hfill 2024
 \begin{itemize}[noitemsep]
-    \item Designing an ML compiler for CUDA that stacks kernels with IO-aware behavior and programmatic execution graphs.
-    \item Features include stream-aware optimization, data prefetching, and intermediate representation generation.
+    \item Design a programming language syntactically parallel as a machine learning standard.
+    \item Create a new version of the forward-backward standard that exploits IO operation latency.
+    \item Features include stream-aware optimization, prefetching graphs for latency hiding, and compatability with state-of-the-art frameworks.
 \end{itemize}
 
+\textbf{Fourier is All You Need} \hfill CUDA, C++, Pytorch \\
+\textit{Machine Learning Architecture} \hfill 2024
+\begin{itemize}[noitemsep]
+    \item Exploited mathematical properties of the Fourier Transform to accelerate Convolutional Neural Networks.
+    \item Investigated the properties of the Fourier space in training scenarios.
+    \item Designed UNet-Like variations for the Fourier Layer case.
+\end{itemize}
+
+\begin{center}
+    \textbf{Miscellaneous Projects}
+\end{center}
+
+\textbf{Rapid Eye Movement Detection} \hfill Pytorch, Pandas, Numpy, Scikit-Learn \\
+\textit{Sleeping stages classification} \hfill 2024
+\begin{itemize}[noitemsep]
+    \item Developed models to classify sleeping stages.
+    \item Achieved state-of-the-art classification with 97\% F1 Score.
+    \item Implemented Deep Recurrent Neural Networks and Attention-based architectures.
+\end{itemize}
+
+\textbf{SADI A.I.} \hfill Pytorch, OpenCV \\
+\textit{Security AI} \hfill 2024
+\begin{itemize}[noitemsep]
+    \item Developed foundational models to classify and recognize threats.
+    \item Trained and fined-tuned state-of-the-art Computer Vision models (YOLO, YOLO-NAS).
+    \item Real-Time face detection, threat detection, face recognition, and individual detection.
+\end{itemize}
+
+\textbf{Sketcher A.I.} \hfill Pytorch, OpenCV \\
+\textit{Art AI} \hfill 2024
+\begin{itemize}[noitemsep]
+    \item Created foundational pipeline to create sketches from images.
+    \item Developed state-of-the-art style-transfer mechanisms.
+\end{itemize}
 
 \begin{center}
     \textbf{Awards \& Recognitions}
@@ -139,16 +150,45 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 
 
 \begin{center}
-    \textbf{Leadership \& Activities}
+    \textbf{Leadership \& Experience}
 \end{center}
 
-\textbf{Organization}	\hfill City, State
+\textbf{DDS.py}	\hfill Asuncion, Paraguay
 
-\textbf{Role} \hfill Month Year – Month Year
+\textbf{Founder, Teacher} \hfill July 2023 – December 2024
 \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
-    \item This section can be formatted similarly to the Experience section, or you can omit descriptions for activities.
-    \item If this section is more relevant to the opportunity you are applying for, consider moving this above your Experience section.
+  \item Taught foundational programming (Python) and ML concepts to high school students.
+  \item Developed and maintained a public learning roadmap on GitHub.
 \end{itemize}
+
+\textbf{Mechatronics Teacher}	\hfill Asuncion, Paraguay
+
+\textbf{Role} \hfill March 2024 – November 2024
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \item General purpose progamming (C++, Python) lectures for High School students.
+  \item Taught Networking (OSI Model, TCP/UDP communication), Astronomy software design patterns (NASA Software Engineering book), serial protocols (USB, $I^{2}C$, etc).
+  \item Taught programming paradigms: Object Oriented Programming (OOP) and Functional programming.
+\end{itemize}
+
+\textbf{Physics Teacher}	\hfill Asuncion, Paraguay
+
+\textbf{Role} \hfill March 2023 – November 2024
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+  \item Taught lectures on classical mechanics and electromagnetism for physics olympiads.
+\end{itemize}
+
+
+\begin{center}
+    \textbf{Certifications}
+\end{center}
+
+\textbf{Stanford University: Machine Learning}: \url{https://www.coursera.org/account/accomplishments/specialization/certificate/VNCPL4MXPB5A}
+
+\textbf{IBM AI Engineernig}: \url{https://www.coursera.org/account/accomplishments/specialization/certificate/JEYSUHXTCYU5}
+
+\textbf{Jovian: Zero to GANs with Pytorch}: \url{https://jovian.com/certificate/MFQTQMZXGM}
+
+\textbf{Duoling English Test}: \url{https://certs.duolingo.com/vc54x03gh7zcprnd}
 
 \begin{center}
     \textbf{Skills}
