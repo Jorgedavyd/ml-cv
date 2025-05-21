@@ -108,6 +108,8 @@ INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/geometry/geometry.sty
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/generic/iftex/ifvtex.sty
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/generic/iftex/ifvtex.sty
+INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/natbib/bibentry.sty
+INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/natbib/bibentry.sty
 INPUT ./main.aux
 INPUT ./main.aux
 INPUT main.aux
@@ -146,6 +148,9 @@ INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/base/t1cmtt.fd
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/base/t1cmtt.fd
 INPUT /nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

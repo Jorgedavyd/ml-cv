@@ -8,6 +8,7 @@
 \usepackage[brazil]{babel}
 \usepackage{lipsum}
 \usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage{bibentry}
 
 \begin{document}
 \begin{center}
@@ -57,23 +58,24 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \textbf{Computer Vision for Astronomic instrumentation} \hfill OpenCV, Scikit-Image, Pytorch \\
 \textit{CorKit: A Framework for LASCO Coronagraph Calibration} \hfill March 2024 – July 2024
 \begin{itemize}[noitemsep]
-    \item Developed a pipeline for automated image preprocessing and calibration of solar coronagraph data.
+    \item Developed an alternative pipeline (original: \cite{lasco}) for automated image preprocessing and calibration of solar coronagraph data.
     \item Integrated physics-informed constraints to correct lens artifacts and vignetting in LASCO C2/C3 data.
-    \item Implemented using PyTorch and OpenCV; optimized modules for GPU acceleration.
+    \item Implemented Partial CNN architecture \cite{conv}) from scratch and refactored it for the specific use case.
 \end{itemize}
 
 \textbf{Statistical Mechanics informed Neural Networks} \hfill NVIDIA Modulus, Pytorch, Polars, Pandas \\
 \textit{Vlasov-Maxwell informed Operator Learning for Solar Wind Modeling} \hfill October 2024 – Present
 \begin{itemize}[noitemsep]
-    \item Modeled solar wind behavior using physics-informed machine learning.
+    \item Modeled solar wind's electron's anisotropic behavior using physics-informed machine learning.
     \item Incorporated statistical mechanics constraints into the governing equations.
-    \item Designed custom Physics-Informed Neural Operators (PINOs) tailored to the system.\end{itemize}
+    \item Designed custom Physics-Informed Neural Operators (PINOs) \cite{pino} tailored to the system.
+\end{itemize}
 
 \textbf{Machine Learning for Celestial Mechanics} \hfill NVIDIA Modulus, Pytorch, Numpy \\
 \textit{PINNs for Celestial Mechanics: The Family of N-body problems} \hfill December 2024 – Present
 \begin{itemize}[noitemsep]
-    \item Understanding chaotic systems with Physics informed Neural Networks.
-    \item Enforced hamiltonian constraints through physics-informed training loss functions.
+    \item Understanding chaotic systems with Physics informed Neural Networks \cite{pinn}.
+    \item Enforced hamiltonian constraints of celestial mechanics through physics-informed Lagrangian optimization.
     \item Studied resonancy and periodic properties of the physical system.
 \end{itemize}
 
@@ -81,12 +83,14 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
     \textbf{Specialized Projects}
 \end{center}
 
-\textbf{LightTorch – Deep Learning Framework} \hfill Lightning, Pytorch, CUDA C++ \\
+\textbf{LighTorch – Deep Learning Framework} \hfill Lightning, Pytorch, Optuna, CUDA C++ \\
 \textit{Personal ML Framework Project} \hfill 2024 – Present
 \begin{itemize}[noitemsep]
     \item Wrapper over the Pytorch Lightning and plain Pytorch backends.
     \item Abstractions for supervised, self-supervised, and adversarial training.
-    \item More than 20 modules extending novel architectures, including Partial Convolutions, Fourier Layers, and Attention mechanisms, among others.
+    \item Multi-Objective optimization for Hyperparameter tuning with Optuna.
+    \item More than 20 modules extending novel architectures, including the Partial Convolutions \cite{conv}, Fourier Layers (including deconvolutions) \cite{fourier}, among others.
+    \item Implemented additional architectures from scratch: Rotary Positional Encoding \cite{pe}; RMS Norm \cite{norm}; GLU Variants \cite{ffw}; Multi Query Attention, Grouped Query Attention \& Multi Head Attention \cite{attention}.
     \item In progress: Low level optimizations for non-standard modules.
 \end{itemize}
 
@@ -98,12 +102,13 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
     \item Features include stream-aware optimization, prefetching graphs for latency hiding, and compatability with state-of-the-art frameworks.
 \end{itemize}
 
-\textbf{Fourier is All You Need} \hfill CUDA, C++, Pytorch \\
+\textbf{Fourier is All You Need \& Fourier Variational Autoencoders} \hfill CUDA, C++, Pytorch \\
 \textit{Machine Learning Architecture} \hfill 2024
 \begin{itemize}[noitemsep]
     \item Exploited mathematical properties of the Fourier Transform to accelerate Convolutional Neural Networks.
     \item Investigated the properties of the Fourier space in training scenarios.
-    \item Designed UNet-Like variations for the Fourier Layer case.
+    \item Designed UNet-Like variations for the Fourier Layer case \cite{fourier} (implemented from scratch).
+    \item Created a Fourier Layer alternative for UNet-Like autoencoders: Fourier Deconvolutional Layer.
 \end{itemize}
 
 \begin{center}
@@ -113,16 +118,16 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \textbf{Rapid Eye Movement Detection} \hfill Pytorch, Pandas, Numpy, Scikit-Learn \\
 \textit{Sleeping stages classification} \hfill 2024
 \begin{itemize}[noitemsep]
-    \item Developed models to classify sleeping stages.
-    \item Achieved state-of-the-art classification with 97\% F1 Score.
-    \item Implemented Deep Recurrent Neural Networks and Attention-based architectures.
+    \item Implemented Recurrent Neural Networks to classify sleeping stages.
+    \item Achieved state-of-the-art classification with 97\% F1 Score (Residual GRU model).
+    \item Deep Recurrent Neural Networks and Attention-based architectures.
 \end{itemize}
 
 \textbf{SADI A.I.} \hfill Pytorch, OpenCV \\
 \textit{Security AI} \hfill 2024
 \begin{itemize}[noitemsep]
     \item Developed foundational models to classify and recognize threats.
-    \item Trained and fined-tuned state-of-the-art Computer Vision models (YOLO, YOLO-NAS).
+    \item Trained state-of-the-art Computer Vision models (YOLO, YOLO-NAS).
     \item Real-Time face detection, threat detection, face recognition, and individual detection.
 \end{itemize}
 
@@ -130,7 +135,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \textit{Art AI} \hfill 2024
 \begin{itemize}[noitemsep]
     \item Created foundational pipeline to create sketches from images.
-    \item Developed state-of-the-art style-transfer mechanisms.
+    \item Implemented state-of-the-art style-transfer mechanisms.
 \end{itemize}
 
 \begin{center}
@@ -150,33 +155,42 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 
 
 \begin{center}
-    \textbf{Leadership \& Experience}
+    \textbf{Experience}
 \end{center}
 
 \textbf{DDS.py}	\hfill Asuncion, Paraguay
-
-\textbf{Founder, Teacher} \hfill July 2023 – December 2024
-\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+\hfill July 2023 – December 2024
+\begin{itemize}[noitemsep]
   \item Taught foundational programming (Python) and ML concepts to high school students.
-  \item Developed and maintained a public learning roadmap on GitHub.
+  \item Developed and maintained an alternative learning roadmap on GitHub.
+  \item An introductory to advance course on deep learning, and an introduction to ML performance engineering.
 \end{itemize}
 
-\textbf{Mechatronics Teacher}	\hfill Asuncion, Paraguay
 
-\textbf{Role} \hfill March 2024 – November 2024
-\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+\textbf{Mechatronics Teacher}	\hfill Asuncion, Paraguay
+\hfill March 2024 – November 2024
+\begin{itemize}[noitemsep]
   \item General purpose progamming (C++, Python) lectures for High School students.
   \item Taught Networking (OSI Model, TCP/UDP communication), Astronomy software design patterns (NASA Software Engineering book), serial protocols (USB, $I^{2}C$, etc).
   \item Taught programming paradigms: Object Oriented Programming (OOP) and Functional programming.
 \end{itemize}
 
 \textbf{Physics Teacher}	\hfill Asuncion, Paraguay
-
-\textbf{Role} \hfill March 2023 – November 2024
-\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+\hfill March 2023 – November 2024
+\begin{itemize}[noitemsep]
   \item Taught lectures on classical mechanics and electromagnetism for physics olympiads.
 \end{itemize}
 
+\textbf{Oym Systems Group S.A.}	\hfill Asuncion, Paraguay
+
+\textbf{ML \& Devops Engineer - Research Team} \hfill July 2024 – Present
+\begin{itemize}[noitemsep]
+  \item Develop cloud infrastructure pipelines for ERP software scalability.
+  \item Created LLM pipelines with Retrieval Augmented Generation (RAG) and Low Rank Adaptation (LoRA) for fine-tuning.
+  \item Refactoring monolithic architectures into dockerized microservices.
+  \item Implemented Kubernetes Operators for horizontal and vertical scalability.
+  \item Proposed Continuous Integration and Deployment Git operations.
+\end{itemize}
 
 \begin{center}
     \textbf{Certifications}
@@ -200,8 +214,12 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 
 \textbf{Scientific:} Deep Learning, Numerical Optimization, Compiler Design, Geospatial ML, Remote Sensing, Data Fusion
 
-\textbf{ML Tools:} CuDNN, CUDA Toolkit, Triton, PyTorch, Lightning, NVIDIA Modulus, Scikit-learn
+\textbf{ML Tools:} CuDNN, CUDA Toolkit, Tensor RT, Triton, PyTorch, Lightning, NVIDIA Modulus, Scikit-learn, Transformers
 
 \textbf{Data Tools:} Pandas, Polars, Matplotlib, Seaborn, PySpark, cudf, SQL
+
+\textbf{Devops: } Docker, Istio (Service mesh), Nginx, Helm, Kubernetes, Argo CD, NVIDIA NIM, Prometheus, Grafana, Loki Grafana
+
+\bibliography{references}
 
 \end{document}

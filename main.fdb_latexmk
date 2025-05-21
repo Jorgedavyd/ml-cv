@@ -1,5 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1747351263.61848 "main.tex" "main.pdf" "main" 1747351264.03753 0
+["bibtex main"] 1747850827.97884 "main.aux" "main.bbl" "main" 1747850895.08486 2
+  "./references.bib" 1747850682.28596 4379 b49dac4735dbb4b815070c38812655fb ""
+  "main.aux" 1747850894.97599 467 a39a0dbe3ae1bdc5de8969d42ed3c927 "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1747850894.59698 "main.tex" "main.pdf" "main" 1747850895.08502 0
   "/nix/store/0pmm8y4smr6nh1mfm6h1ndcwz52pdqfr-texlive-2023-env/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1 5467731 d9adf6e86854d011685f5263f300c67f ""
   "/nix/store/0pmm8y4smr6nh1mfm6h1ndcwz52pdqfr-texlive-2023-env/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1 8221880 ff88b6a9b92ee1226675fc16a19ce60b ""
   "/nix/store/0pmm8y4smr6nh1mfm6h1ndcwz52pdqfr-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 b68bc76581ba682401ed187c83ce82c0 ""
@@ -76,12 +83,14 @@
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/latexconfig/epstopdf-sys.cfg" 1 678 4792914a8f45be57bb98413425e4c7af ""
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/lipsum/lipsum.ltd.tex" 1 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/lipsum/lipsum.sty" 1 14690 c2c754218a7108db7823a4839c1bc3cd ""
+  "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/natbib/bibentry.sty" 1 3400 e000bb2fc43fc077e107f62f8c25613e ""
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/refcount/refcount.sty" 1 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/nix/store/1agc9cx80knl4m6yr428zn64dxyw23dn-texlive-2023-env-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "main.aux" 1747351263.98726 261 aa84e9bcb835ef5e103b74d0d85460fd "pdflatex"
-  "main.out" 1747351263.90125 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1747351263.30925 9365 97c4786fab99e181c6a3022c1f3933e8 ""
+  "main.aux" 1747850894.97599 467 a39a0dbe3ae1bdc5de8969d42ed3c927 "pdflatex"
+  "main.bbl" 1747850828.03668 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 1747850894.88799 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1747850894.44199 10792 854ab8a281d4ad815f4f8d2df200162a ""
   (generated)
   "main.aux"
   "main.log"
