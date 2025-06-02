@@ -1,26 +1,26 @@
 \documentclass[11pt]{article}
 \usepackage{graphicx} % Required for inserting images
 \setlength{\parindent}{0pt}
-\usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}
+\usepackage[english]{babel}
 \usepackage{lipsum}
 \usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
 \usepackage{bibentry}
+\usepackage{hyperref}
 
 \begin{document}
 \begin{center}
     \textbf{Jorge Enciso}\\
     \begin{center}
-        Machine Learning Engineer and Performance Engineer
+        Machine Learning Engineer and Machine Learning Performance Engineer
     \end{center}
     \hrulefill
 \end{center}
 
 \begin{center}
-    Asunción, Paraguay \textbullet \ jorged.encyso@gmail.com \textbullet \ +595 981 631462
+    Asunción, Paraguay • \href{mailto:jorged.encyso@gmail.com}{jorged.encyso@gmail.com} • +595 981 631462 • \href{https://github.com/jorgedavyd}{Github} • \href{https://linkedin.com/in/jorge-david-enciso-martínez-149977265}{Linkedin} • \href{https://medium.com/@jorged.encyso}{Medium}
 \end{center}
 
 \vspace{0.5pt}
@@ -37,7 +37,8 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
     \item Honors Thesis: \textit{“Niche Modeling with Deep Learning”}
         \begin{itemize}
             \item Created an automated training pipeline to reconstruct species’ spatial distributions from historical occurrence data.
-            \item Developed and benchmarked models for generalized distribution estimation (Neural Networks, Logistic Regression, Naive Bayes, SVM, Random Forest) and pseudo-absence generation (One-Class SVM, K-means Clustering).
+            \item Developed and benchmarked Machine Learning and Deep Learning models for generalized distribution estimation (Neural Networks, Logistic Regression, Naive Bayes, SVM, Random Forest)
+            \item Three step pseudo-absence generation with unsupervised methods (One-Class SVM, K-means Clustering) \cite{pseudo} implemented from scratch, random and radius based sampling.
         \end{itemize}
 \end{itemize}
 
@@ -50,33 +51,36 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \textbf{Multi-modal modelling for Geophysical Forecasting} \hfill Polars, Pandas, Pytorch \\
 \textit{MHD-informed Multi-Modal Networks for Geomagnetic Forecasting} \hfill October 2023 – May 2024
 \begin{itemize}[noitemsep]
-    \item Developed a multi-modal ML framework using data from LASCO, SDO, ACE, and DSCOVR to predict Dst index and magnetospheric boundaries.
-    \item Engineered transformer-based architecture for satellite time series fusion; integrated MHD constraints into training dynamics.
-    \item Led all aspects: data preprocessing, model design, CUDA kernel optimization, and evaluation.
+    \item Developed Deep Learning architectures for long-term Solar Wind forecasting.
+    \item Engineered Bahdanau-based architectures for satellite time series fusion.
+    \item Integrated MHD constraints as a physics informed cost function.
+    \item Created the concept of "Encoder Forcing", a technique to enforce the calibration of the input data throughout the training process.
+    \item Achieved 96\% accuracy, 86\% recall, and 93\% precision, competing with state-of-the-art.
 \end{itemize}
 
 \textbf{Computer Vision for Astronomic instrumentation} \hfill OpenCV, Scikit-Image, Pytorch \\
 \textit{CorKit: A Framework for LASCO Coronagraph Calibration} \hfill March 2024 – July 2024
 \begin{itemize}[noitemsep]
-    \item Developed an alternative pipeline (original: \cite{lasco}) for automated image preprocessing and calibration of solar coronagraph data.
-    \item Integrated physics-informed constraints to correct lens artifacts and vignetting in LASCO C2/C3 data.
-    \item Implemented Partial CNN architecture \cite{conv}) from scratch and refactored it for the specific use case.
+    \item Developed an alternative pipeline for automated image preprocessing and calibration of solar coronagraph data.
+    \item Implemented the original pipeline \cite{lasco} from scratch with modern programming languages with extended linear algebra support (Python, C++).
+    \item Created a Multi-Layered UNet-Like Partial Convolutional Neural Network architecture from the foundational Partial CNN work \cite{conv} from scratch.
+    \item Increased the reliability of coronagraph scientific products with contextual image inpainting.
 \end{itemize}
 
 \textbf{Statistical Mechanics informed Neural Networks} \hfill NVIDIA Modulus, Pytorch, Polars, Pandas \\
-\textit{Vlasov-Maxwell informed Operator Learning for Solar Wind Modeling} \hfill October 2024 – Present
+\textit{Vlasov-Maxwell informed Operator Learning for Solar Wind Modeling} \hfill October 2024 – Ongoing
 \begin{itemize}[noitemsep]
     \item Modeled solar wind's electron's anisotropic behavior using physics-informed machine learning.
-    \item Incorporated statistical mechanics constraints into the governing equations.
-    \item Designed custom Physics-Informed Neural Operators (PINOs) \cite{pino} tailored to the system.
+    \item Implemented Deep Neural Networks, Recurrent Neural Networks, and Neural Operators to replicate electron's probability density function.
+    \item Unveiled reliable data-driven distributions for an obscure area in Plasma Physics.
 \end{itemize}
 
 \textbf{Machine Learning for Celestial Mechanics} \hfill NVIDIA Modulus, Pytorch, Numpy \\
-\textit{PINNs for Celestial Mechanics: The Family of N-body problems} \hfill December 2024 – Present
+\textit{PINNs for Celestial Mechanics: The Family of N-body problems} \hfill December 2024 – Ongoing
 \begin{itemize}[noitemsep]
-    \item Understanding chaotic systems with Physics informed Neural Networks \cite{pinn}.
-    \item Enforced hamiltonian constraints of celestial mechanics through physics-informed Lagrangian optimization.
-    \item Studied resonancy and periodic properties of the physical system.
+    \item Modeled gravitational interactions between celestial bodies with Physics informed Neural Networks \cite{pinn}.
+    \item Enforced hamiltonian constraints of the N-Free body problem and its variations (Euler, Lagrange) using Lagrangian optimization and symplectic integrators.
+    \item Presented PINNs as an alternative to reliably study celestial mechanics without overly complex numerical methods.
 \end{itemize}
 
 \begin{center}
@@ -84,7 +88,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \end{center}
 
 \textbf{LighTorch – Deep Learning Framework} \hfill Lightning, Pytorch, Optuna, CUDA C++ \\
-\textit{Personal ML Framework Project} \hfill 2024 – Present
+\textit{Personal ML Framework Project} \hfill 2024 – Ongoing
 \begin{itemize}[noitemsep]
     \item Wrapper over the Pytorch Lightning and plain Pytorch backends.
     \item Abstractions for supervised, self-supervised, and adversarial training.
@@ -95,11 +99,11 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \end{itemize}
 
 \textbf{Fusion – IO-Aware Kernelized Training Compiler} \hfill CUDA, C++, Pytorch\\
-\textit{In Development} \hfill 2024
+\textit{In Development} \hfill 2024 - Ongoing
 \begin{itemize}[noitemsep]
     \item Design a programming language syntactically parallel as a machine learning standard.
     \item Create a new version of the forward-backward standard that exploits IO operation latency.
-    \item Features include stream-aware optimization, prefetching graphs for latency hiding, and compatability with state-of-the-art frameworks.
+    \item Features include stream-aware optimization, prefetching graphs for latency hiding, and compatibility with state-of-the-art frameworks.
 \end{itemize}
 
 \textbf{Fourier is All You Need \& Fourier Variational Autoencoders} \hfill CUDA, C++, Pytorch \\
@@ -116,7 +120,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \end{center}
 
 \textbf{Rapid Eye Movement Detection} \hfill Pytorch, Pandas, Numpy, Scikit-Learn \\
-\textit{Sleeping stages classification} \hfill 2024
+\textit{Sleeping stages classification} \hfill 2023
 \begin{itemize}[noitemsep]
     \item Implemented Recurrent Neural Networks to classify sleeping stages.
     \item Achieved state-of-the-art classification with 97\% F1 Score (Residual GRU model).
@@ -124,7 +128,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \end{itemize}
 
 \textbf{SADI A.I.} \hfill Pytorch, OpenCV \\
-\textit{Security AI} \hfill 2024
+\textit{Security AI} \hfill 2023
 \begin{itemize}[noitemsep]
     \item Developed foundational models to classify and recognize threats.
     \item Trained state-of-the-art Computer Vision models (YOLO, YOLO-NAS).
@@ -132,7 +136,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \end{itemize}
 
 \textbf{Sketcher A.I.} \hfill Pytorch, OpenCV \\
-\textit{Art AI} \hfill 2024
+\textit{Art AI} \hfill 2023
 \begin{itemize}[noitemsep]
     \item Created foundational pipeline to create sketches from images.
     \item Implemented state-of-the-art style-transfer mechanisms.
@@ -170,7 +174,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 \textbf{Mechatronics Teacher}	\hfill Asuncion, Paraguay
 \hfill March 2024 – November 2024
 \begin{itemize}[noitemsep]
-  \item General purpose progamming (C++, Python) lectures for High School students.
+  \item General purpose programming (C++, Python) lectures for High School students.
   \item Taught Networking (OSI Model, TCP/UDP communication), Astronomy software design patterns (NASA Software Engineering book), serial protocols (USB, $I^{2}C$, etc).
   \item Taught programming paradigms: Object Oriented Programming (OOP) and Functional programming.
 \end{itemize}
@@ -183,7 +187,7 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 
 \textbf{Oym Systems Group S.A.}	\hfill Asuncion, Paraguay
 
-\textbf{ML \& Devops Engineer - Research Team} \hfill July 2024 – Present
+\textbf{ML \& Devops Engineer - Research Team} \hfill July 2024 – Ongoing
 \begin{itemize}[noitemsep]
   \item Develop cloud infrastructure pipelines for ERP software scalability.
   \item Created LLM pipelines with Retrieval Augmented Generation (RAG) and Low Rank Adaptation (LoRA) for fine-tuning.
@@ -196,21 +200,21 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
     \textbf{Certifications}
 \end{center}
 
-\textbf{Stanford University: Machine Learning}: \url{https://www.coursera.org/account/accomplishments/specialization/certificate/VNCPL4MXPB5A}
+\begin{itemize}
+    \item \href{https://www.coursera.org/account/accomplishments/specialization/certificate/VNCPL4MXPB5A}{\textbf{Stanford University: Machine Learning}}
+    \item \href{https://www.coursera.org/account/accomplishments/specialization/certificate/JEYSUHXTCYU5}{\textbf{IBM AI Engineernig}}
+    \item \href{https://jovian.com/certificate/MFQTQMZXGM}{\textbf{Jovian: Zero to GANs with Pytorch}}
+    \item \href{https://certs.duolingo.com/vc54x03gh7zcprnd}{\textbf{Duoling English Test}}
+\end{itemize}
 
-\textbf{IBM AI Engineernig}: \url{https://www.coursera.org/account/accomplishments/specialization/certificate/JEYSUHXTCYU5}
-
-\textbf{Jovian: Zero to GANs with Pytorch}: \url{https://jovian.com/certificate/MFQTQMZXGM}
-
-\textbf{Duoling English Test}: \url{https://certs.duolingo.com/vc54x03gh7zcprnd}
 
 \begin{center}
     \textbf{Skills}
 \end{center}
 
-\textbf{Languages:} Spanish (Native), English (Fluent), Portuguese (Basic), Japanese (Basic)
+\textbf{Languages:} Spanish (Native), English (Fluent), Japanese (Basic)
 
-\textbf{Programming:} C++, CUDA C++, Python, Rust, Bash, Lua
+\textbf{Programming:} C++, CUDA C++, PTX ISA, Python, Rust, Bash, Lua
 
 \textbf{Scientific:} Deep Learning, Numerical Optimization, Compiler Design, Geospatial ML, Remote Sensing, Data Fusion
 
@@ -218,8 +222,9 @@ High School Diploma, Natural Sciences Track, GPA [10/10], Valedictorian \hfill G
 
 \textbf{Data Tools:} Pandas, Polars, Matplotlib, Seaborn, PySpark, cudf, SQL
 
-\textbf{Devops: } Docker, Istio (Service mesh), Nginx, Helm, Kubernetes, Argo CD, NVIDIA NIM, Prometheus, Grafana, Loki Grafana
+\textbf{Devops:} Docker, Istio (Service mesh), Nginx, Helm, Kubernetes, Argo CD, NVIDIA NIM, Prometheus, Grafana
 
+\bibliographystyle{plain}
 \bibliography{references}
 
 \end{document}

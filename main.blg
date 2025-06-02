@@ -1,46 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/nixos.org)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-I found no \bibstyle command---while reading file main.aux
+The style file: plain.bst
+Database file #1: references.bib
+Illegal end of database file---line 112 of file references.bib
+ : 
+ : 
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 You've used 9 entries,
-            0 wiz_defined-function locations,
-            93 strings with 534 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+            2118 wiz_defined-function locations,
+            545 strings with 5697 characters,
+and the built_in function-call counts, 3414 in all, are:
+= -- 286
+> -- 276
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 109
+- -- 100
+* -- 278
+:= -- 603
+add.period$ -- 22
+call.type$ -- 9
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 9
+duplicate$ -- 79
+empty$ -- 212
+format.name$ -- 100
+if$ -- 668
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 9
+missing$ -- 4
+newline$ -- 43
+num.names$ -- 18
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 68
 quote$ -- 0
-skip$ -- 0
+skip$ -- 69
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 117
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 36
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
+while$ -- 22
+width$ -- 10
+write$ -- 86
 (There was 1 error message)

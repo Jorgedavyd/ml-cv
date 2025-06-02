@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{attention}
+Joshua Ainslie, James Lee-Thorp, Michiel de~Jong, Yury Zemlyanskiy, Federico Lebrón, and Sumit Sanghai.
+\newblock Gqa: Training generalized multi-query transformer models from multi-head checkpoints, 2023.
+
+\bibitem{conv}
+Guilin Liu, Fitsum~A. Reda, Kevin~J. Shih, Ting-Chun Wang, Andrew Tao, and Bryan Catanzaro.
+\newblock Image inpainting for irregular holes using partial convolutions, 2018.
+
+\bibitem{lasco}
+J.~Morrill, C.~Korendyke, G.~Brueckner, F.~Giovane, Russell Howard, M.~Koomen, Dyson Moses, S.~Plunkett, Angelos Vourlidas, E.~Esfandiari, Nathan Rich, Dennis Wang, A.~Thernisien, Philippe Lamy, Antoine Llebaria, D.~Biesecker, D.~Michels, Qinghai Gong, and M.~Andrews.
+\newblock Calibration of the soho/lasco c3 white light coronagraph.
+\newblock {\em Solar Physics}, 233:331--372, 02 2006.
+
+\bibitem{pinn}
+M.~Raissi, P.~Perdikaris, and G.E. Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations.
+\newblock {\em Journal of Computational Physics}, 378:686--707, 2019.
+
+\bibitem{pseudo}
+Senait~D. Senay, Susan~P. Worner, and Takayoshi Ikeda.
+\newblock Novel three-step pseudo-absence selection technique for improved species distribution modelling.
+\newblock {\em PLOS ONE}, 8(8):1--16, 08 2013.
+
+\bibitem{ffw}
+Noam Shazeer.
+\newblock Glu variants improve transformer, 2020.
+
+\bibitem{pe}
+Jianlin Su, Yu~Lu, Shengfeng Pan, Ahmed Murtadha, Bo~Wen, and Yunfeng Liu.
+\newblock Roformer: Enhanced transformer with rotary position embedding, 2023.
+
+\bibitem{fourier}
+Jakub Zak, Anna Korzynska, Antonina Pater, and Lukasz Roszkowiak.
+\newblock Fourier transform layer: A proof of work in different training scenarios.
+\newblock {\em Applied Soft Computing}, 145:110607, 2023.
+
+\bibitem{norm}
+Biao Zhang and Rico Sennrich.
+\newblock Root mean square layer normalization, 2019.
+
+\end{thebibliography}
